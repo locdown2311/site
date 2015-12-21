@@ -1,38 +1,155 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Site by locdown2311</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Site</h1>
-      <h2 class="project-tagline">For a world where help is costless</h2>
-      <a href="https://github.com/locdown2311/site" class="btn">View on GitHub</a>
-      <a href="https://github.com/locdown2311/site/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/locdown2311/site/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html>
+<head>
+  <title>Em breve | Igor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/basico.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</head>
+<body data-spy="scroll" data-targer=".navbar" data-offset="50">
+<!-------------Navegacao------------->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Igor</a>
+     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços e Referências</a></li>
+      </ul>
+     </div>
+  </div>
+</nav>
+<div id="nome" class="jumbotron text-center">
+  <h1>Igor Carvalho</h1> 
+  <img src="images/pijama.jpg" class="img-circle" width="240" height="210" alt="Autor"> 
+  <p>Estudante de Engenharia de Computação</p> 
 
-    <section class="main-content">
-      <p>Hello everyone , i'm making a personal website for my graduation . Any sugestions please contact me at : <a href="mailto:contato@igorcarvalho.eng.br">contato@igorcarvalho.eng.br</a></p>
+</div>
+  <form class="form-inline text-center">
+    <input type="email" class="form-control" size="50" placeholder="Email ..">
+    <button type="button" class="btn btn-danger">Fique informado</button>
+<div id="sobre" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Sobre mim</h2>
+      <h4>Estudante de Engenharia de Computação pela UFOP..</h4> 
+      <p>Garoto gentil que gosta de ajudar a todos sempre.</p>	 
+      <button id="sabermais" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#mais">Saiba mais</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-signal logo"></span>
+    </div>
+  </div>
+</div>
 
-<p>For a world where ask for help is always free... :D</p>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="fa fa-globe logo"></span> 
+    </div>
+    <div class="col-sm-8">
+      <h2>Valores</h2>
+      <h4><strong>MISSÃO:</strong> Ajudar a todos , visando apenas satisfazer a necessidade alheia..</h4> 
+      <p><strong>VISÃO:</strong> Por um mundo onde pedir ajuda não se pague..</p>
+    </div>
+  </div>
+</div>
+<div id="servicos" class="container-fluid text-center">
+  <h2>SERVIÇOS</h2>
+  <h4>Ofereçoo no momento</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="fa fa-cloud-upload"></span>
+      <h4>Instalação de arquivos em servidores</h4>
+      <p>Faco instalação de o que o cliente desejar em sua maquina.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-heart"></span>
+      <h4>Atenção</h4>
+      <p>Todos os clientes terão atendimento de qualidade..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-check-square"></span>
+      <h4>Servico de qualidade</h4>
+      <p>Garantia de satisfação..</p>
+    </div>
+    </div>
+    <br><br>
+</div>
+<h2>O que os amigos do Igor dizem :</h2>
+<br><br>
+<div id="rec" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#rec" data-slide-to="0" class="active"></li>
+    <li data-target="#rec" data-slide-to="1"></li>
+    <li data-target="#rec" data-slide-to="2"></li>
+	<li data-target="#rec" data-slide-to="3"></li>
+  </ol>
 
-<p>License information : You can copy everything , it's free to use and edit . I only ask to help my work , the rest is up to you ;D</p>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>"Uma pessoa muito carinhosa e atenciosa"<br><span style="font-style:normal;">Sandy Alvarenga de Souza , Estudante de Arquitetura</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Uma pessoa que se pode contar sempre. Muito carinhoso e fofo."<br><span style="font-style:normal;">Lorena Rodrigues Dias Martins Silva </span></h4>
+    </div>
+    <div class="item">
+      <h4>"Uma pessoa super companheira , disposta a tudo pelo bem dos outros."<br><span style="font-style:normal;">Renata Cota , Estudante de Engenharia Civil</span></h4>
+    </div>
+	<div class="item">
+	<h4>
+	"Uma pessoa muito confiavel , sempre me ajudou e sempre quis minha companhia."<br><span
+	style="font-style:normal;">Ana Clara Ávila Gomes</span>
+	</h4>
+	</div>
+  </div>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/locdown2311/site">Site</a> is maintained by <a href="https://github.com/locdown2311">locdown2311</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#rec" role="button" data-slide="prev">
+    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#rec" role="button" data-slide="next">
+    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+</body>
+<footer class="container-fluid text-center">
+  <a href="#nome" title="Subir">
+    <span class="fa fa-chevron-up"></span>
+  </a>
+  <p>Feito por Igor</p> 
+</footer>
 </html>
